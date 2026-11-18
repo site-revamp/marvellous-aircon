@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvellous Aircon | Aircon Servicing, Cleaning & Repair Singapore</title>
+<meta name="description" content="Explore Marvellous Aircon's aircon servicing, chemical wash, repairs and installation services in Singapore. Contact the team to enquire or book.">
+<meta name="theme-color" content="#085FBB">
+<link rel="canonical" href="https://www.marvellous.sg/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#085FBB;--deep:#174477;--navy:#102F50;--aqua:#48BFC7;
+  --pale:#E9F4FC;--mist:#F3F7FB;--white:#fff;--ink:#183B50;
+  --body:#4B6071;--line:#D9E5EF;--muted:#6B7E8D;
+  --heading:"Manrope",sans-serif;--text:"Inter",sans-serif;
+  --wrap:1160px;--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--mist);color:var(--body);font:17px/1.65 var(--text)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+.container{width:min(var(--wrap),calc(100% - 44px));margin:auto}
+h1,h2,h3{margin:0;color:var(--ink);font-family:var(--heading);line-height:1.13;letter-spacing:-.035em}
+h1{font-size:clamp(42px,6vw,72px);font-weight:800}
+h2{font-size:clamp(32px,4vw,49px);font-weight:800}
+h3{font-size:23px;font-weight:800}
+p{margin:0 0 16px}
+.eyebrow{margin:0 0 16px;color:var(--blue);font-size:15px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.intro{max-width:690px;margin-top:18px;color:var(--muted);font-size:18px}
+.section{padding:100px 0}
+.section-head{max-width:760px;margin-bottom:42px}
+.btn{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border:1px solid transparent;border-radius:999px;font-size:16px;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--deep)}
+.btn-aqua{background:var(--aqua);color:#073B50}
+.btn-aqua:hover{background:#6AD0D5}
+.btn-outline{border-color:#B9CBD9;background:#fff;color:var(--deep)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+:focus-visible{outline:3px solid #F0B94A;outline-offset:4px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(14px)}
+.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo img{width:235px;max-height:68px;object-fit:contain;object-position:left center}
+.navlinks{display:flex;align-items:center;gap:25px}
+.navlinks a{font-size:15px;font-weight:700;color:var(--ink)}
+.navlinks a:hover{color:var(--blue)}
+.navright{display:flex;gap:10px;align-items:center}
+.navright .btn{min-height:44px;padding:10px 16px;font-size:15px}
+.menu{display:none;width:45px;height:45px;border:1px solid var(--line);border-radius:50%;background:white;color:var(--blue);font-size:22px}
+.mobile-menu{display:none;padding:8px 22px 20px;background:white}
+.mobile-menu.open{display:grid}
+.mobile-menu a{padding:12px 0;border-bottom:1px solid var(--line);font-weight:700;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:78px 0 88px;background:linear-gradient(120deg,#F3F7FB 0%,#E6F2FC 62%,#DDF5F4 100%)}
+.hero:after{content:"";position:absolute;width:560px;height:560px;right:-250px;bottom:-350px;border:1px solid #B7D6EA;border-radius:50%;box-shadow:0 0 0 45px #085FBB08,0 0 0 90px #085FBB08}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px}
+.hero h1 span{color:var(--blue)}
+.hero-copy>p:not(.eyebrow){max-width:610px;margin:24px 0 28px;font-size:19px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{position:relative;min-height:450px}
+.hero-photo{position:absolute;inset:0 0 20px 25px;overflow:hidden;border-radius:46% 46% 24px 24px;background:#B8D2E3;box-shadow:0 25px 60px #17447724}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-label{position:absolute;right:-12px;bottom:0;max-width:220px;padding:23px;border:6px solid var(--mist);border-radius:20px;background:var(--blue);color:white}
+.hero-label strong{display:block;color:#A9F0ED;font:800 24px var(--heading)}
+.hero-label span{font-size:15px}
+.hero-note{display:flex;align-items:center;gap:11px;margin-top:26px;font-size:15px;font-weight:700;color:var(--muted)}
+.hero-note b{display:grid;width:32px;height:32px;place-items:center;border-radius:50%;background:#D8F2F0;color:var(--deep)}
+
+/* Quick band */
+.band{padding:26px 0;background:var(--deep);color:#fff}
+.band-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.band strong{font:800 20px var(--heading)}
+.band p{margin:3px 0 0;color:#D9E8F3;font-size:16px}
+
+/* Services */
+.services{background:#fff}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{padding:30px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:.2s}
+.service-card:hover{transform:translateY(-5px);border-color:#8BCBD5;box-shadow:0 16px 38px #17447712}
+.service-icon{display:grid;width:60px;height:60px;place-items:center;margin-bottom:23px;border-radius:18px;background:var(--pale);color:var(--blue)}
+.service-icon svg,.benefit-icon svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.service-card p{margin:13px 0 20px;color:var(--muted);font-size:16px}
+.link{color:var(--blue);font-weight:800;font-size:16px}
+.link:hover{text-decoration:underline}
+
+/* Service finder */
+.finder{background:var(--navy);color:#fff}
+.finder h2{color:#fff}
+.finder .eyebrow{color:#7CE0DF}
+.finder .intro{color:#D0DFE9}
+.finder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px}
+.finder-list{border-top:1px solid #ffffff35}
+.finder-row{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid #ffffff35}
+.finder-row b{color:#7CE0DF;font:800 20px var(--heading)}
+.finder-row h3{margin-bottom:7px;color:white;font-size:21px}
+.finder-row p{margin:0;color:#D0DFE9;font-size:16px}
+.note{margin-top:22px;color:#B9CDDC;font-size:15px}
+
+/* Pricing */
+.pricing{background:var(--mist)}
+.price-panel{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.price-card{padding:32px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.price-card h3{margin-bottom:12px}
+.price-card p{color:var(--muted);font-size:16px}
+.price-card.featured{border:2px solid var(--blue);background:#F5FAFF}
+.price-callout{margin-top:18px;padding:16px;border-radius:14px;background:var(--pale);color:var(--deep);font-size:15px}
+.price-card .btn{margin-top:10px}
+.price-disclaimer{margin-top:20px;color:var(--muted);font-size:15px}
+
+/* Why choose */
+.why{background:#fff}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 30px}
+.benefit{min-height:205px;padding:25px 12px 25px 0;border-top:1px solid var(--line)}
+.benefit-icon{display:grid;width:54px;height:54px;place-items:center;margin-bottom:17px;border-radius:50%;background:#DDF4F4;color:var(--blue)}
+.benefit h3{font-size:20px;margin-bottom:8px}
+.benefit p{max-width:330px;margin:0;color:var(--muted);font-size:16px}
+
+/* Process */
+.process{background:#EAF4FC}
+.process-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.process-image{min-height:450px;overflow:hidden;border-radius:28px 28px 100px 28px;background:#C6DCEB}
+.process-image img{width:100%;height:100%;min-height:450px;object-fit:cover}
+.steps{margin-top:25px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #CADCE8}
+.step-number{display:grid;width:40px;height:40px;place-items:center;border-radius:50%;background:white;color:var(--blue);font-weight:800}
+.step h3{font-size:20px;margin-bottom:6px}
+.step p{margin:0;color:var(--muted);font-size:16px}
+
+/* Areas */
+.areas{background:#fff}
+.area-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.area-tags span{padding:10px 15px;border:1px solid var(--line);border-radius:999px;background:#F8FBFD;color:var(--deep);font-size:15px;font-weight:700}
+
+/* FAQ */
+.faq{background:var(--mist)}
+.faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-question{display:flex;width:100%;justify-content:space-between;gap:20px;padding:21px 0;border:0;background:none;text-align:left;color:var(--ink);font:800 17px var(--heading);cursor:pointer}
+.faq-question span:last-child{display:grid;width:30px;height:30px;flex:0 0 30px;place-items:center;border-radius:50%;background:#DDF4F4;color:var(--blue);font-size:21px}
+.faq-answer{max-width:700px;padding:0 42px 20px 0;color:var(--muted);font-size:16px}
+.faq-answer[hidden]{display:none}
+
+/* CTA and footer */
+.contact{padding:85px 0;background:var(--blue);color:white}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.contact h2{max-width:720px;color:white}
+.contact p{max-width:650px;margin:15px 0 0;color:#E0EDF8;font-size:18px}
+.contact-actions{display:flex;flex-direction:column;gap:11px;flex-shrink:0}
+.contact-actions .btn-outline{border-color:#ffffff80;background:transparent;color:white}
+.contact-actions .btn-outline:hover{background:#ffffff18}
+footer{padding:60px 0 90px;background:#102F50;color:#D0DFE9}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .9fr;gap:55px}
+.footer-logo{display:inline-block;padding:8px;border-radius:10px;background:white}
+.footer-logo img{width:230px;max-height:75px;object-fit:contain}
+footer p{max-width:380px;margin-top:18px;font-size:16px}
+footer h3{margin-bottom:17px;color:white;font-size:19px}
+.footer-links{display:grid;gap:11px}
+.footer-links a{font-size:16px}
+.footer-links a:hover{color:#7CE0DF}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;margin-top:40px;padding-top:22px;border-top:1px solid #ffffff30;font-size:15px}
+.mobile-cta{position:fixed;z-index:90;right:0;bottom:0;left:0;display:none;grid-template-columns:1fr 1fr;gap:10px;padding:11px 15px calc(11px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#ffffffed;box-shadow:0 -8px 25px #102F5015}
+.mobile-cta .btn{min-height:49px;padding:10px;font-size:15px}
+@media(max-width:980px){
+ .navlinks,.navright{display:none}.menu{display:block}
+ .hero-grid{grid-template-columns:1fr;gap:35px}.hero-copy{max-width:720px}.hero-visual{min-height:410px}
+ .finder-grid,.process-grid{grid-template-columns:1fr;gap:35px}
+ .faq-grid{grid-template-columns:1fr;gap:25px}
+ .contact-inner{align-items:flex-start;flex-direction:column}
+ .contact-actions{flex-direction:row;flex-wrap:wrap}
+}
+@media(max-width:700px){
+ body{font-size:16px}.container{width:calc(100% - 34px)}
+ .nav{min-height:72px}.logo img{width:200px;max-height:58px}
+ .hero{padding:52px 0 60px}.hero-copy>p:not(.eyebrow){font-size:17px}
+ .hero-grid{gap:28px}.hero-visual{min-height:330px}
+ .hero-photo{inset:0 10px 20px 10px}.hero-label{right:0;padding:16px;max-width:180px}
+ .actions{flex-direction:column}.actions .btn{width:100%}
+ .band-inner{align-items:flex-start;flex-direction:column}.band-inner .btn{width:100%}
+ .section{padding:75px 0}.section-head{margin-bottom:30px}.intro{font-size:17px}
+ .service-grid,.price-panel{grid-template-columns:1fr}
+ .service-card{padding:25px}
+ .benefit-grid{grid-template-columns:1fr 1fr;gap:0 16px}
+ .benefit{min-height:215px;padding-right:4px}
+ .benefit h3{font-size:18px}.benefit p{font-size:15px}
+ .process-image,.process-image img{min-height:310px}
+ .area-tags{gap:8px}.area-tags span{font-size:15px;padding:8px 12px}
+ .contact{padding:70px 0}.contact-actions{width:100%;flex-direction:column}.contact-actions .btn{width:100%}
+ .footer-grid{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column}
+ .mobile-cta{display:grid}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"AirConditioningContractor",
+ "name":"Marvellous Aircon Pte Ltd",
+ "url":"https://www.marvellous.sg/",
+ "telephone":"+6564286288",
+ "email":"support@marvellous.sg",
+ "areaServed":"Singapore",
+ "address":{"@type":"PostalAddress","addressCountry":"SG"}
+}
+</script>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#home" aria-label="Marvellous Aircon home"><img src="marvellous-logo.png" alt="Marvellous Aircon logo"></a>
+  <nav class="navlinks" aria-label="Main navigation">
+   <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#process">How it works</a><a href="#areas">Areas</a><a href="#faq">FAQs</a>
+  </nav>
+  <div class="navright"><a class="btn btn-outline" href="tel:+6564286288">Call us</a><a class="btn btn-blue" href="https://www.marvellous.sg/online-booking/">Book online ↗</a></div>
+  <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+ </div>
+ <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#process">How it works</a><a href="#areas">Service areas</a><a href="#faq">FAQs</a><a href="https://www.marvellous.sg/online-booking/">Online booking</a>
+ </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="container hero-grid">
+  <div class="hero-copy">
+   <p class="eyebrow">Marvellous Aircon · Singapore</p>
+   <h1>Comfort at home.<br><span>Care in every detail.</span></h1>
+   <p>From routine aircon servicing to chemical cleaning, repairs and installation, find the right air-conditioning service for your home or business.</p>
+   <div class="actions">
+    <a class="btn btn-blue" href="https://www.marvellous.sg/online-booking/">Book an appointment ↗</a>
+    <a class="btn btn-outline" href="#services">Explore services ↓</a>
+   </div>
+   <div class="hero-note"><b>✓</b> Air-conditioning services across Singapore</div>
+  </div>
+  <div class="hero-visual">
+   <div class="hero-photo"><img src="https://images.unsplash.com/photo-1631545806609-5d8f4a9b4d6e?auto=format&fit=crop&w=1100&q=85" alt="Modern indoor air-conditioning installation" fetchpriority="high"></div>
+   <div class="hero-label"><strong>MARVELLOUS</strong><span>Aircon care, from servicing to installation.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="container band-inner">
+  <div><strong>Need help choosing a service?</strong><p>Tell us what your aircon needs and explore the available options.</p></div>
+  <a class="btn btn-aqua" href="https://wa.me/6590949039" target="_blank" rel="noopener">WhatsApp the team ↗</a>
+ </div>
+</section>
+
+<section class="section services" id="services">
+ <div class="container">
+  <div class="section-head">
+   <p class="eyebrow">Our services</p>
+   <h2>Aircon solutions for everyday comfort.</h2>
+   <p class="intro">Explore the different services offered by Marvellous Aircon. Each service has a different purpose, depending on your equipment and requirements.</p>
+  </div>
+  <div class="service-grid">
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><rect x="5" y="10" width="30" height="18" rx="3"/><path d="M10 16h20M13 22h14M12 32l-2 3m18-3 2 3"/></svg>
+    </div>
+    <h3>General servicing</h3>
+    <p>Routine aircon maintenance to help keep your system in working order. Ask what cleaning and inspection tasks are included.</p>
+    <a class="link" href="https://www.marvellous.sg/">Explore servicing →</a>
+   </article>
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><path d="M8 8h24v24H8zM13 14h14M13 20h14M13 26h8"/><path d="M5 5l3 3m24 24 3 3"/></svg>
+    </div>
+    <h3>Chemical wash & overhaul</h3>
+    <p>Deeper cleaning options for systems that may need more than routine maintenance. Confirm the scope for your unit.</p>
+    <a class="link" href="https://www.marvellous.sg/">Explore deep cleaning →</a>
+   </article>
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><path d="M8 12h24v17H8zM13 17h14M13 22h8"/><path d="M20 5v5m-5-3 5 3 5-3"/></svg>
+    </div>
+    <h3>Repair & troubleshooting</h3>
+    <p>For cooling concerns, unusual operation, water leakage and other aircon problems that need assessment.</p>
+    <a class="link" href="https://www.marvellous.sg/">Ask about repairs →</a>
+   </article>
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><path d="M7 12h26v17H7zM12 17h16M12 22h10"/><path d="M20 5v5m-5-3 5 3 5-3"/></svg>
+    </div>
+    <h3>Aircon installation</h3>
+    <p>Discuss your space, aircon requirements and installation options with the team.</p>
+    <a class="link" href="https://www.marvellous.sg/">Explore installation →</a>
+   </article>
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13"/><path d="M20 11v9l7 4M10 8l-3 4m23-4 3 4"/></svg>
+    </div>
+    <h3>Maintenance packages</h3>
+    <p>Ask about maintenance arrangements for your home or business and the tasks covered in each visit.</p>
+    <a class="link" href="https://www.marvellous.sg/">Ask about packages →</a>
+   </article>
+   <article class="service-card">
+    <div class="service-icon" aria-hidden="true">
+     <svg viewBox="0 0 40 40"><path d="M8 9h24v22H8zM13 15h14M13 21h14M13 27h8"/><path d="M26 5l4 4-4 4"/></svg>
+    </div>
+    <h3>Steam cleaning & gas top-up</h3>
+    <p>Enquire about additional cleaning and aircon support services, subject to the needs of your system.</p>
+    <a class="link" href="https://www.marvellous.sg/">Ask about options →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="section finder" id="choose">
+ <div class="container finder-grid">
+  <div>
+   <p class="eyebrow">Start with your concern</p>
+   <h2>Find a sensible starting point.</h2>
+   <p class="intro">Not every aircon issue needs the same service. Use these examples to prepare for a conversation with the team.</p>
+   <a class="btn btn-aqua" href="https://wa.me/6590949039" target="_blank" rel="noopener">Discuss your aircon ↗</a>
+  </div>
+  <div class="finder-list">
+   <div class="finder-row"><b>01</b><div><h3>Routine maintenance</h3><p>Ask about general servicing and the maintenance tasks included in the visit.</p></div></div>
+   <div class="finder-row"><b>02</b><div><h3>Deeper cleaning</h3><p>Ask whether a chemical wash, steam wash or overhaul is suitable for your unit.</p></div></div>
+   <div class="finder-row"><b>03</b><div><h3>Performance or operating issue</h3><p>Describe symptoms such as poor cooling, unusual sounds or water leakage and ask about assessment.</p></div></div>
+   <div class="finder-row"><b>04</b><div><h3>New system or replacement</h3><p>Discuss your space, requirements and installation options with the team.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section pricing" id="pricing">
+ <div class="container">
+  <div class="section-head">
+   <p class="eyebrow">Understand the price</p>
+   <h2>Clearer pricing. Better decisions.</h2>
+   <p class="intro">Review the current quotation details and confirm the total applicable amount for your unit count and system before booking.</p>
+  </div>
+  <div class="price-panel">
+   <article class="price-card featured">
+    <p class="eyebrow">Before booking</p>
+    <h3>Check the full service total</h3>
+    <p>When comparing per-fan-coil prices, check the number of units, minimum charges, applicable system type and any additional work.</p>
+    <div class="price-callout"><strong>Ask for:</strong> unit quantity · service scope · total payable · applicable conditions</div>
+    <a class="btn btn-blue" href="https://www.marvellous.sg/online-booking/">View online booking ↗</a>
+   </article>
+   <article class="price-card">
+    <p class="eyebrow">Need a quotation?</p>
+    <h3>Get the details for your setup</h3>
+    <p>Share your aircon type, number of fan coils and the service you are considering so the team can advise on the relevant pricing.</p>
+    <div class="price-callout">Confirm any promotions, add-ons and service conditions directly before proceeding.</div>
+    <a class="btn btn-outline" href="https://wa.me/6590949039" target="_blank" rel="noopener">Ask on WhatsApp ↗</a>
+   </article>
+  </div>
+  <p class="price-disclaimer">Prices and promotions can change. Refer to Marvellous Aircon's current official booking information for live rates and terms.</p>
+ </div>
+</section>
+
+<section class="section why">
+ <div class="container">
+  <div class="section-head"><p class="eyebrow">A better service experience</p><h2>Make your next aircon decision with clarity.</h2><p class="intro">Useful information, clear service choices and straightforward contact routes help customers take the next step.</p></div>
+  <div class="benefit-grid">
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><path d="M6 11h28v18H6zM11 16h18M11 22h12"/></svg></div><h3>Service choice</h3><p>Explore maintenance, cleaning, repair and installation services in one place.</p></article>
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><path d="M20 5l12 5v9c0 8-5 13-12 16C13 32 8 27 8 19v-9z"/><path d="M14 20l4 4 8-9"/></svg></div><h3>Clear expectations</h3><p>Know what to ask about the service scope and any additional charges.</p></article>
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><path d="M7 10h26v20H7zM7 13l13 10 13-10"/></svg></div><h3>Direct contact</h3><p>Reach the team through phone, WhatsApp or the online booking route.</p></article>
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M20 10v10l7 4"/></svg></div><h3>Convenient planning</h3><p>Check appointment options and share your requirements before arranging a visit.</p></article>
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><path d="M8 8h24v24H8zM13 14h14M13 20h14M13 26h9"/></svg></div><h3>Service information</h3><p>Find relevant details without having to navigate scattered content.</p></article>
+   <article class="benefit"><div class="benefit-icon"><svg viewBox="0 0 40 40"><path d="M6 20h28M20 6v28"/><circle cx="20" cy="20" r="13"/></svg></div><h3>Singapore coverage</h3><p>Check whether your location is covered when making an enquiry.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section process" id="process">
+ <div class="container process-grid">
+  <div class="process-image"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=85" alt="Air conditioning technician working on equipment" loading="lazy"></div>
+  <div>
+   <p class="eyebrow">How to get started</p><h2>A simple route from enquiry to appointment.</h2>
+   <p class="intro">Prepare a few details about your system so the team can understand your requirements.</p>
+   <div class="steps">
+    <div class="step"><span class="step-number">01</span><div><h3>Share your requirements</h3><p>Tell the team your location, unit quantity and the service you are considering.</p></div></div>
+    <div class="step"><span class="step-number">02</span><div><h3>Confirm the scope and price</h3><p>Ask what is included, any applicable conditions and the total payable amount.</p></div></div>
+    <div class="step"><span class="step-number">03</span><div><h3>Arrange your appointment</h3><p>Use the booking route to check appointment availability and confirm the details.</p></div></div>
+   </div>
+   <a class="btn btn-blue" href="https://www.marvellous.sg/online-booking/">Go to online booking ↗</a>
+  </div>
+ </div>
+</section>
+
+<section class="section areas" id="areas">
+ <div class="container">
+  <div class="section-head"><p class="eyebrow">Singapore service areas</p><h2>Aircon services across the island.</h2><p class="intro">The website identifies service coverage across multiple Singapore neighbourhoods. Contact the team to confirm availability for your address.</p></div>
+  <div class="area-tags">
+   <span>Cheng San</span><span>Hougang</span><span>Yishun</span><span>Woodlands</span><span>Bukit Batok</span><span>Tampines</span><span>Orchard</span><span>Jurong West</span><span>Serangoon</span><span>Toa Payoh</span><span>Sengkang</span><span>Simei</span><span>Ang Mo Kio</span><span>Choa Chu Kang</span>
+  </div>
+ </div>
+</section>
+
+<section class="section faq" id="faq">
+ <div class="container faq-grid">
+  <div><p class="eyebrow">FAQs</p><h2>Questions before you book?</h2><p class="intro">A few useful points to check when arranging aircon servicing or cleaning.</p></div>
+  <div class="faq-list">
+   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>What is included in general aircon servicing?</span><span>+</span></button><div class="faq-answer" hidden>Service scope can vary. Confirm the cleaning, inspection and maintenance tasks included in the selected package before booking.</div></div>
+   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>What is the difference between a chemical wash and overhaul?</span><span>+</span></button><div class="faq-answer" hidden>They are different levels of cleaning. Ask the team which components are accessed and cleaned, how much dismantling is involved and which option suits your unit.</div></div>
+   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>How do I understand the final price?</span><span>+</span></button><div class="faq-answer" hidden>Confirm the number of fan coils, service type, minimum charges, applicable system conditions and any additional work. Ask for the full total before confirming.</div></div>
+   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Can I arrange an appointment online?</span><span>+</span></button><div class="faq-answer" hidden>Marvellous Aircon provides an online booking page. Use it to check the available booking process and appointment details.</div></div>
+   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>How can I contact Marvellous Aircon?</span><span>+</span></button><div class="faq-answer" hidden>You can call 6428 6288, WhatsApp +65 9094 9039 or email support@marvellous.sg.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="container contact-inner">
+  <div><p class="eyebrow" style="color:#A9F0ED">Ready to enquire?</p><h2>Let's get your aircon requirements sorted.</h2><p>Speak with Marvellous Aircon about servicing, cleaning, repairs or installation.</p></div>
+  <div class="contact-actions">
+   <a class="btn btn-aqua" href="https://www.marvellous.sg/online-booking/">Book online ↗</a>
+   <a class="btn btn-outline" href="https://wa.me/6590949039" target="_blank" rel="noopener">WhatsApp +65 9094 9039</a>
+   <a class="btn btn-outline" href="tel:+6564286288">Call 6428 6288</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><a class="footer-logo" href="#home"><img src="marvellous-logo.png" alt="Marvellous Aircon logo"></a><p>Air-conditioning servicing, cleaning, repairs and installation in Singapore.</p></div>
+   <div><h3>Explore</h3><div class="footer-links"><a href="#services">Services</a><a href="#pricing">Pricing information</a><a href="#areas">Service areas</a><a href="#faq">FAQs</a><a href="https://www.marvellous.sg/online-booking/">Online booking</a></div></div>
+   <div><h3>Contact</h3><div class="footer-links"><a href="tel:+6564286288">6428 6288</a><a href="https://wa.me/6590949039">WhatsApp +65 9094 9039</a><a href="mailto:support@marvellous.sg">support@marvellous.sg</a><a href="https://www.marvellous.sg/contact-us/">Contact page</a></div></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> Marvellous Aircon. All rights reserved.</span><span>Singapore · Air-conditioning services</span></div>
+ </div>
+</footer>
+
+<div class="mobile-cta" aria-label="Quick contact">
+ <a class="btn btn-blue" href="tel:+6564286288">Call Marvellous</a>
+ <a class="btn btn-aqua" href="https://wa.me/6590949039" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+const menuButton=document.querySelector(".menu");
+const mobileMenu=document.querySelector("#mobileMenu");
+menuButton.addEventListener("click",()=>{
+ const open=menuButton.getAttribute("aria-expanded")==="true";
+ menuButton.setAttribute("aria-expanded",String(!open));
+ menuButton.setAttribute("aria-label",open?"Open menu":"Close menu");
+ menuButton.textContent=open?"☰":"×";
+ mobileMenu.classList.toggle("open",!open);
+});
+mobileMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+ mobileMenu.classList.remove("open");
+ menuButton.setAttribute("aria-expanded","false");
+ menuButton.textContent="☰";
+}));
+document.querySelectorAll(".faq-question").forEach(button=>{
+ button.addEventListener("click",()=>{
+  const open=button.getAttribute("aria-expanded")==="true";
+  button.setAttribute("aria-expanded",String(!open));
+  button.nextElementSibling.hidden=open;
+ });
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
